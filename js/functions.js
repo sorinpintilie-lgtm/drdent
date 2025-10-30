@@ -120,24 +120,37 @@ jQuery.noConflict();
 
 	function toggle_elements(){
 		//hamburger
-		$('.menu-toggle').on('click',function(){
-			if($('body').hasClass('active-menu')){
-				$('body').removeClass('active-menu');
-				$('.menu-toggle').removeClass('active');
+		$('.menu-toggle').on('click',function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			
+			var isActive = $('.mobile-menu-overlay').hasClass('active');
+			
+			if(isActive){
+				$('body').removeClass('active-menu').css('overflow', '');
+				$('.menu-toggle').removeClass('active').attr('aria-expanded', 'false');
 				$('.mobile-menu-overlay').removeClass('active');
 			}else{
-				$('body').addClass('active-menu');
-				$('.menu-toggle').addClass('active');
+				$('body').addClass('active-menu').css('overflow', 'hidden');
+				$('.menu-toggle').addClass('active').attr('aria-expanded', 'true');
 				$('.mobile-menu-overlay').addClass('active');
 			}
 		})
+		
 		// Close mobile menu when clicking overlay
 		$('.mobile-menu-overlay').on('click', function(e){
 			if(e.target === this){
-				$('body').removeClass('active-menu');
-				$('.menu-toggle').removeClass('active');
+				$('body').removeClass('active-menu').css('overflow', '');
+				$('.menu-toggle').removeClass('active').attr('aria-expanded', 'false');
 				$('.mobile-menu-overlay').removeClass('active');
 			}
+		})
+		
+		// Close menu when clicking on a link
+		$('.mobile-menu-overlay').on('click', 'a', function(){
+			$('body').removeClass('active-menu').css('overflow', '');
+			$('.menu-toggle').removeClass('active').attr('aria-expanded', 'false');
+			$('.mobile-menu-overlay').removeClass('active');
 		})
 	}
 	function mobile_heights(){

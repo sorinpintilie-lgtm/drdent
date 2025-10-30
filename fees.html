@@ -22,12 +22,18 @@
 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	
 	<meta name="apple-mobile-web-app-title" content="Dr.Dent"><link rel="icon" type="image/png" href="images/favicon-48.png"><link rel="shortcut icon" href="images/favicon-48.png"><link rel="icon" href="images/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" sizes="57x57" href="images/favicon-57.png"><link rel="apple-touch-icon" sizes="72x72" href="images/favicon-72.png"><link rel="apple-touch-icon" sizes="114x114" href="images/favicon-114.png"><link rel="apple-touch-icon" sizes="144x144" href="images/favicon-144.png"><link rel="icon" href="images/favicon-192.png" sizes="192x192"></head>
 <body class="page-template-default page wp-theme-pearldental cookies-not-set bg-light-green">
+	<a href="#main" class="skip-to-content">Salt la conținut</a>
 	<div class="site-cursor"></div><div class="site-transition"></div>	<div class="site-main">
 		<header class="site-header">
 			<div class="header-wrap">
 				<div class="site-logo">
-					<a href="index.html" title="acasă" rel="home" class="logo"><img src="images/logo-color.svg" alt="Dr.Dent Logo"></a>
+					<a href="index.html" title="acasă" rel="home" class="logo"><img src="images/logo-color.svg" alt="Dr.Dent - Cabinet Stomatologic București" width="200" height="60"></a>
 				</div>
+				<button class="menu-toggle" aria-label="Deschide meniu" aria-expanded="false">
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+				</button>
 				<div class="site-navigation">
 					<div class="menu-main-container">
 						<ul id="menu-main" class="main-menu">
@@ -37,6 +43,7 @@
 							<li class="menu-item"><a href="team.html">Echipa</a></li>
 							<li class="menu-item"><a href="location.html">Locație</a></li>
 							<li class="menu-item"><a href="faq.html">Întrebări</a></li>
+							<li class="menu-item"><a href="resurse.html">Resurse</a></li>
 						</ul>
 					</div>
 				</div>
@@ -44,13 +51,14 @@
 			<div class="mobile-menu-overlay">
 				<div class="mobile-menu-content">
 					<div class="menu-main-container">
-						<ul id="menu-main" class="main-menu">
+						<ul id="menu-main-mobile" class="main-menu">
 							<li class="menu-item"><a href="index.html">Acasă</a></li>
 							<li class="menu-item"><a href="services.html">Servicii</a></li>
 							<li class="menu-item current-menu-item"><a href="fees.html">Tarife</a></li>
 							<li class="menu-item"><a href="team.html">Echipa</a></li>
 							<li class="menu-item"><a href="location.html">Locație</a></li>
 							<li class="menu-item"><a href="faq.html">Întrebări</a></li>
+							<li class="menu-item"><a href="resurse.html">Resurse</a></li>
 						</ul>
 					</div>
 				</div>
@@ -73,6 +81,7 @@
 				<div class="fees-content">
 					<div class="fee-section">
 						<h3><i class="custom-icon icon-mark-blue"></i> Îngrijire Preventivă</h3>
+						<div class="pricing-table-wrapper">
 						<table class="pricing-table">
 							<thead>
 								<tr>
@@ -103,10 +112,12 @@
 								</tr>
 							</tbody>
 						</table>
+						</div>
 					</div>
 
 					<div class="fee-section">
 						<h3><i class="custom-icon icon-mark-blue"></i> Tratament Restaurativ</h3>
+						<div class="pricing-table-wrapper">
 						<table class="pricing-table">
 							<thead>
 								<tr>
@@ -137,10 +148,12 @@
 								</tr>
 							</tbody>
 						</table>
+						</div>
 					</div>
 
 					<div class="fee-section">
 						<h3><i class="custom-icon icon-mark-blue"></i> Proceduri Cosmetice</h3>
+						<div class="pricing-table-wrapper">
 						<table class="pricing-table">
 							<thead>
 								<tr>
@@ -171,10 +184,12 @@
 								</tr>
 							</tbody>
 						</table>
+						</div>
 					</div>
 
 					<div class="fee-section">
 						<h3><i class="custom-icon icon-mark-blue"></i> Chirurgie Orală</h3>
+						<div class="pricing-table-wrapper">
 						<table class="pricing-table">
 							<thead>
 								<tr>
@@ -205,6 +220,7 @@
 								</tr>
 							</tbody>
 						</table>
+						</div>
 					</div>
 
 					<div class="fee-section">
@@ -234,8 +250,8 @@
 				<div class="inner-wrap cta-section">
 					<h3>Doriți o estimare personalizată?</h3>
 					<p>Contactați-ne pentru o consultație gratuită și aflați costurile exacte pentru tratamentul dumneavoastră.</p>
-					<a href="tel:+40213449317" class="site-button">Sunați-ne: +40 21 344 9317</a>
-					<a href="https://app.nexhealth.com/appt/pearldentalbucharest" class="site-button" target="_blank">Programați Consultația</a>
+					<a href="tel:+40213449317" class="site-button" aria-label="Sunați la 021 344 9317">Sunați-ne: +40 21 344 9317</a>
+					<a href="https://app.nexhealth.com/appt/pearldentalbucharest" class="site-button" target="_blank" rel="noopener noreferrer">Programați Consultația</a>
 				</div>
 			</section>
 		</main>
@@ -243,15 +259,15 @@
 			<div class="content-wrap"><div class="footer-wrap"><div class="footer-socials"><span class="fs-40 color-dark-blue">Conectați-vă cu noi.</span><div class="menu-socials-container"><ul id="menu-socials" class="footer-menu"><li class="menu-item"><a target="_blank" href="https://www.instagram.com/pearldentalbucharest/" title="Urmăriți-ne pe instagram"><i class="custom-icon icon-instagram"></i></a></li>
 <li class="menu-item"><a target="_blank" href="https://www.facebook.com/pearldentalbucharest" title="Urmăriți-ne pe facebook"><i class="custom-icon icon-facebook"></i></a></li>
 </ul></div></div></div><div class="footer-wrap"><div class="footer-box"><div class="footer-icon"><i class="custom-icon" style="background-image:url(images/icon-map.svg)"></i></div><div class="footer-content"><p><strong>DR.DENT</strong><br>
-Calea Victoriei 10<br>
+Strada Aviator Popisteanu 54A<br>
 Etajul 2<br>
-București 010101</p>
+București 010091</p>
 </div></div><div class="footer-box"><div class="footer-icon"><i class="custom-icon" style="background-image:url(images/icon-clock.svg)"></i></div><div class="footer-content"><p><strong>Luni & Vineri</strong> 8:00 - 17:00<br>
 <strong>Marți - Joi</strong> 7:30 - 19:00<br>
 <strong>Sâmbătă</strong> 9:00 - 16:00</p>
 </div></div><div class="footer-box"><div class="footer-icon"><i class="custom-icon" style="background-image:url(images/icon-headset.svg)"></i></div><div class="footer-content"><p><strong>Telefon:</strong> <a href="tel:+40213449317">021 344 9317</a><br>
 <strong>Email: </strong><a class="primary-fg" href="mailto:info@drdent.com">info@drdent.com</a></p>
-</div></div><div class="footer-box"><div class="footer-icon"><i class="custom-icon" style="background-image:url(images/icon-calendar.svg)"></i></div><div class="footer-content"><p><a href="https://app.nexhealth.com/appt/pearldentalbucharest">Programare Online</a></p>
+</div></div><div class="footer-box"><div class="footer-icon"><i class="custom-icon" style="background-image:url(images/icon-calendar.svg)"></i></div><div class="footer-content"><p><a href="https://app.nexhealth.com/appt/pearldentalbucharest" target="_blank" rel="noopener noreferrer">Programare Online</a></p>
 </div></div></div></div></footer></div>
 
 <script type="text/javascript" src="js/front.min.js"></script>
