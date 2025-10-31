@@ -15,11 +15,13 @@ jQuery.noConflict();
 		team_init();
 		technology_init();
 		testimonials_init();
-		phone_popup_init();
+		// phone_popup_init(); // Commented out - phone popup widget removed
 		faq_toggle();
 		custom_cursor();
 		smooth_scroll();
 		page_transition();
+		init_scroll_animations();
+		init_image_animations();
  	})
 	$(window).resize(function () {
         background_image_breakpoints();
@@ -119,7 +121,34 @@ jQuery.noConflict();
 	}
 
 	function toggle_elements(){
-		//hamburger
+		var focusableElements;
+		var firstFocusableElement;
+		var lastFocusableElement;
+		
+		// Function to close mobile menu
+		function closeMobileMenu(){
+			$('body').removeClass('active-menu').css('overflow', '');
+			$('.menu-toggle').removeClass('active').attr('aria-expanded', 'false');
+			$('.mobile-menu-overlay').removeClass('active');
+			$('.menu-toggle').focus();
+		}
+		
+		// Function to open mobile menu
+		function openMobileMenu(){
+			$('body').addClass('active-menu').css('overflow', 'hidden');
+			$('.menu-toggle').addClass('active').attr('aria-expanded', 'true');
+			$('.mobile-menu-overlay').addClass('active');
+			
+			// Set up focus trap
+			setTimeout(function(){
+				focusableElements = $('.mobile-menu-overlay').find('a, button').filter(':visible');
+				firstFocusableElement = focusableElements.first();
+				lastFocusableElement = focusableElements.last();
+				$('.mobile-menu-close').focus();
+			}, 100);
+		}
+		
+		// Hamburger toggle
 		$('.menu-toggle').on('click',function(e){
 			e.preventDefault();
 			e.stopPropagation();
@@ -127,30 +156,57 @@ jQuery.noConflict();
 			var isActive = $('.mobile-menu-overlay').hasClass('active');
 			
 			if(isActive){
-				$('body').removeClass('active-menu').css('overflow', '');
-				$('.menu-toggle').removeClass('active').attr('aria-expanded', 'false');
-				$('.mobile-menu-overlay').removeClass('active');
+				closeMobileMenu();
 			}else{
-				$('body').addClass('active-menu').css('overflow', 'hidden');
-				$('.menu-toggle').addClass('active').attr('aria-expanded', 'true');
-				$('.mobile-menu-overlay').addClass('active');
+				openMobileMenu();
 			}
 		})
 		
-		// Close mobile menu when clicking overlay
+		// Close button
+		$('.mobile-menu-close').on('click', function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			closeMobileMenu();
+		})
+		
+		// Close mobile menu when clicking overlay background
 		$('.mobile-menu-overlay').on('click', function(e){
 			if(e.target === this){
-				$('body').removeClass('active-menu').css('overflow', '');
-				$('.menu-toggle').removeClass('active').attr('aria-expanded', 'false');
-				$('.mobile-menu-overlay').removeClass('active');
+				closeMobileMenu();
 			}
 		})
 		
 		// Close menu when clicking on a link
 		$('.mobile-menu-overlay').on('click', 'a', function(){
-			$('body').removeClass('active-menu').css('overflow', '');
-			$('.menu-toggle').removeClass('active').attr('aria-expanded', 'false');
-			$('.mobile-menu-overlay').removeClass('active');
+			closeMobileMenu();
+		})
+		
+		// ESC key to close menu
+		$(document).on('keydown', function(e){
+			if(e.key === 'Escape' && $('.mobile-menu-overlay').hasClass('active')){
+				closeMobileMenu();
+			}
+		})
+		
+		// Focus trap for accessibility
+		$('.mobile-menu-overlay').on('keydown', function(e){
+			if(!$('.mobile-menu-overlay').hasClass('active')) return;
+			
+			if(e.key === 'Tab'){
+				if(e.shiftKey){
+					// Shift + Tab
+					if(document.activeElement === firstFocusableElement[0]){
+						e.preventDefault();
+						lastFocusableElement.focus();
+					}
+				}else{
+					// Tab
+					if(document.activeElement === lastFocusableElement[0]){
+						e.preventDefault();
+						firstFocusableElement.focus();
+					}
+				}
+			}
 		})
 	}
 	function mobile_heights(){
@@ -508,19 +564,19 @@ jQuery.noConflict();
 		})		
 	}		
 	function faq_toggle(){
-		$('.faq-single .answer').hide();
-		$('body').on('click', '.faq-single .question', function(e){
+		$('.faq-single .faq-answer').hide();
+		$('body').on('click', '.faq-single .faq-question', function(e){
 			if($(this).parent().hasClass('active')){
 				$('.faq-single').removeClass('active');
 			}else{
 				$('.faq-single').removeClass('active');
 				$(this).parent().addClass('active');
 			}
-			$('.faq-single:not(.active) .answer').slideUp()
-			$('.faq-single.active .answer').slideDown()
+			$('.faq-single:not(.active) .faq-answer').slideUp()
+			$('.faq-single.active .faq-answer').slideDown()
 
-		})	
-	}		
+		})
+	}
 	function custom_cursor(){
 		//init
 		var cursor = $('.site-cursor');
@@ -568,22 +624,22 @@ jQuery.noConflict();
 			});
 		});
 	}		
-	function phone_popup_init(){
-		$('body').on('click', '.phone-popup .widget-close', function(){
-			$('.phone-popup.widget-target').fadeOut(600);
-			$('body').removeClass('phone-active');
-		})
-		
-		$('body').on('click', '.phone-link a', function(e){
-			console.log('init')
-			if(window.innerWidth > 700){
-				console.log('click')
-				e.preventDefault();
-				$('body').addClass('phone-active');
-				$('.phone-popup.widget-target').fadeIn(600);
-			}
-		})
-	}	
+	// function phone_popup_init(){
+	// 	$('body').on('click', '.phone-popup .widget-close', function(){
+	// 		$('.phone-popup.widget-target').fadeOut(600);
+	// 		$('body').removeClass('phone-active');
+	// 	})
+	//
+	// 	$('body').on('click', '.phone-link a', function(e){
+	// 		console.log('init')
+	// 		if(window.innerWidth > 700){
+	// 			console.log('click')
+	// 			e.preventDefault();
+	// 			$('body').addClass('phone-active');
+	// 			$('.phone-popup.widget-target').fadeIn(600);
+	// 		}
+	// 	})
+	// }
 	function background_image_breakpoints(){
 		var desktop,mobile;
 		var ww = window.innerWidth;
@@ -593,6 +649,103 @@ jQuery.noConflict();
             if(ww > 780 && desktop) $(this).css('background-image', 'url(' + desktop + ')');
             if(ww < 781 && mobile) $(this).css('background-image', 'url(' + mobile + ')');
 		})
-	}	
+	}
+	
+	function init_scroll_animations() {
+		// Check if user prefers reduced motion
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		
+		if (prefersReducedMotion) {
+			// Skip animations for users who prefer reduced motion
+			$('.animate-on-scroll, .fade-in-up, .fade-in, .scale-in, .slide-in-left, .slide-in-right').addClass('animate-in');
+			return;
+		}
+		
+		// Intersection Observer options
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+		
+		// Create Intersection Observer
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('animate-in');
+					// Unobserve after animation to improve performance
+					observer.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+		
+		// Observe all animation elements
+		const animatedElements = document.querySelectorAll(
+			'.animate-on-scroll, .fade-in-up, .fade-in, .scale-in, .slide-in-left, .slide-in-right, ' +
+			'.philosophy-item, .service-card, .testimonial, .trust-item, .service-item, ' +
+			'.fee-section, .faq-single, .team-member, .resource-card'
+		);
+		
+		animatedElements.forEach((el, index) => {
+			// Add stagger class for grid items
+			if (el.classList.contains('philosophy-item') ||
+			    el.classList.contains('service-card') ||
+			    el.classList.contains('testimonial') ||
+			    el.classList.contains('trust-item') ||
+			    el.classList.contains('service-item')) {
+				const staggerIndex = (index % 6) + 1;
+				el.classList.add('fade-in-up', `stagger-${staggerIndex}`);
+			}
+			
+			observer.observe(el);
+		});
+		
+		// Special handling for hero section
+		const heroContent = document.querySelector('.hero-content');
+		if (heroContent) {
+			// Hero animations are CSS-based, just ensure they trigger
+			setTimeout(() => {
+				heroContent.classList.add('animate-in');
+			}, 100);
+		}
+	}
+	
+	function init_image_animations() {
+		// Check if user prefers reduced motion
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		
+		if (prefersReducedMotion) {
+			return;
+		}
+		
+		// Observe images for lazy load fade-in
+		const imageObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const img = entry.target;
+					
+					// Add fade-in class when image loads
+					if (img.complete) {
+						img.style.opacity = '1';
+					} else {
+						img.addEventListener('load', () => {
+							img.style.transition = 'opacity 0.6s ease';
+							img.style.opacity = '1';
+						});
+					}
+					
+					imageObserver.unobserve(img);
+				}
+			});
+		}, {
+			threshold: 0.1,
+			rootMargin: '50px'
+		});
+		
+		// Observe all images with lazy loading
+		document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+			img.style.opacity = '0';
+			imageObserver.observe(img);
+		});
+	}
 
 })(jQuery);

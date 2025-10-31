@@ -74,6 +74,9 @@ SnazzyDataForSnazzyMaps={"id":24358,"name":"Blue","description":"Blue Color sche
 				</div>
 			</div>
 			<div class="mobile-menu-overlay">
+				<button class="mobile-menu-close" aria-label="Închide meniu">
+					<span class="close-icon">×</span>
+				</button>
 				<div class="mobile-menu-content">
 					<div class="menu-main-container">
 						<ul id="menu-main-mobile" class="main-menu">
@@ -91,7 +94,16 @@ SnazzyDataForSnazzyMaps={"id":24358,"name":"Blue","description":"Blue Color sche
 		</header>
 		<main id="main" class="site-content">
 			<!-- Hero Section -->
-			<section id="hero" class="hero-section" style="background-image: url('images/drdent-home-opt.jpg'); background-size: cover; background-position: center;">
+			<section id="hero" class="hero-section">
+				<!-- Background Video -->
+				<div class="hero-video-container">
+					<video class="hero-video" autoplay muted loop playsinline poster="images/drdent-home-opt.jpg">
+						<source src="images/hero-video.mov" type="video/mp4">
+						<!-- Fallback image if video doesn't load -->
+					</video>
+					<div class="hero-video-overlay"></div>
+				</div>
+				<!-- Hero Content -->
 				<div class="hero-overlay">
 					<div class="hero-content">
 						<h1>Bun venit la Dr.Dent</h1>
@@ -214,8 +226,7 @@ București 010091</p>
 </div></div><div class="footer-box"><div class="footer-icon"><i class="custom-icon" style="background-image:url(images/icon-headset.svg)"></i></div><div class="footer-content"><p><strong>Telefon:</strong> <a href="tel:+40213449317">021 344 9317</a><br>
 <strong>Email: </strong><a class="primary-fg" href="mailto:info@drdent.com">info@drdent.com</a></p>
 </div></div><div class="footer-box"><div class="footer-icon"><i class="custom-icon" style="background-image:url(images/icon-calendar.svg)"></i></div><div class="footer-content"><p><a href="https://app.nexhealth.com/appt/pearldentalbucharest" target="_blank" rel="noopener noreferrer">Programare Online</a></p>
-</div></div></div></div><div class="phone-popup widget-target"><div class="widget-scroller"><div class="widget-wrap-outer"><div class="widget-wrap-inner"><div class="testimonial-single"><button class="widget-close" aria-label="Închide"></button><div class="inner-wrap phone-badge">Sunați-ne
-la <strong>021 344 9317</strong></div></div></div></div></div></div></footer></div>
+</div></div></div></div></footer></div>
 
 <script type="text/javascript" src="js/front.min.js" id="cookie-notice-front-js"></script>
 <script type="text/javascript" src="js/swiper-bundle.min.js" id="swiper-js"></script>
