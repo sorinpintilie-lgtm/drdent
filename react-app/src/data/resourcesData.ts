@@ -1325,6 +1325,141 @@ export const resourcesData: ResourceArticle[] = [
       'ingrijire-zilnica-orala',
     ],
   },
+  {
+    slug: 'tratament-de-canal',
+    title: 'Tratament de canal: când este necesar, cum se desfășoară și ce trebuie să știți despre recuperare',
+    description: 'Aflați când este recomandat tratamentul de canal, cum decurge procedura și la ce să vă așteptați după intervenție. Un ghid clar pentru pacienții care vor să înțeleagă mai bine această etapă de tratament.',
+    excerpt: 'Tratamentul de canal este una dintre procedurile prin care un dinte afectat în profunzime poate fi salvat. Dacă apar durere persistentă, sensibilitate accentuată sau semne de infecție, este important să înțelegeți când este necesar acest tratament, cum se desfășoară și cum decurge recuperarea după procedură.',
+    category: 'tratamente',
+    categoryTitle: resourceCategoryMeta.tratamente.title,
+    seoTitle: 'Tratament de canal: când este necesar și cum se desfășoară',
+    metaDescription: 'Când este necesar tratamentul de canal, cum se desfășoară și cât durează recuperarea. Informații clare pentru pacienții care se pregătesc de un consult stomatologic.',
+    seoKeywords: [
+      'tratament de canal',
+      'când este necesar tratamentul de canal',
+      'cum se face tratamentul de canal',
+      'recuperare după tratament de canal',
+      'durere după tratament de canal',
+      'infecție dentară tratament',
+      'endodonție',
+      'nerv scos la dinte',
+    ],
+    readTime: '6 min',
+    lastUpdated: '2026-04-20',
+    primaryRoute: '/servicii',
+    primaryRouteLabel: 'Vezi serviciile',
+    content: [
+      {
+        heading: 'Ce este tratamentul de canal',
+        paragraphs: [
+          'Tratamentul de canal, numit și tratament endodontic, este procedura prin care se îndepărtează țesutul afectat din interiorul dintelui, se curăță și se dezinfectează canalele radiculare, iar apoi acestea se sigilează. Scopul tratamentului este salvarea dintelui natural atunci când pulpa dentară este inflamată sau infectată. Procedura este parte din stomatologia conservatoare modernă și urmărește păstrarea dintelui pe arcadă, atunci când acest lucru este posibil. Informația despre rolul tratamentului endodontic în salvarea dintelui este susținută de ghidurile Asociației Americane de Endodonție și de resursele Mayo Clinic.',
+        ],
+      },
+      {
+        heading: 'Când este necesar tratamentul de canal',
+        paragraphs: [
+          'Tratamentul de canal poate fi recomandat atunci când caria a avansat în profunzime, când există o inflamație severă a nervului dentar, o infecție la rădăcina dintelui sau când dintele a fost afectat de un traumatism. În unele situații, dintele poate părea intact la exterior, dar în interior există deja modificări care necesită tratament. De aceea, diagnosticul corect se stabilește în urma consultului clinic și a investigațiilor imagistice. Indicațiile uzuale pentru tratament endodontic sunt descrise în sursele medicale de referință.',
+        ],
+      },
+      {
+        heading: 'Semne care pot indica nevoia unui tratament de canal',
+        paragraphs: [
+          'Printre simptomele care pot sugera necesitatea unui tratament de canal se numără:',
+          'durere dentară persistentă',
+          'sensibilitate intensă la rece sau la cald',
+          'disconfort la masticație',
+          'senzație de presiune în jurul dintelui',
+          'inflamație sau umflare la nivelul gingiei',
+          'modificarea culorii dintelui',
+          'apariția unei infecții sau a unui abces',
+          'Este important de reținut că nu toate infecțiile dentare provoacă din prima durere puternică. Uneori, problema este descoperită la control, înainte să apară un episod dureros sever.',
+        ],
+      },
+      {
+        heading: 'Cum se desfășoară tratamentul de canal',
+        paragraphs: [
+          'Tratamentul începe cu evaluarea clinică a dintelui și stabilirea diagnosticului. După anestezie locală, medicul creează acces în interiorul dintelui, îndepărtează țesutul afectat, curăță și dezinfectează canalele radiculare, apoi le sigilează. În funcție de situație, dintele este ulterior reconstruit, iar uneori poate fi recomandată o coroană pentru protecție și rezistență pe termen lung.',
+          'Pentru pacient, este important să știe că tratamentul nu urmărește doar eliminarea durerii, ci și controlul infecției și păstrarea funcționalității dintelui.',
+        ],
+      },
+      {
+        heading: 'Tratamentul de canal doare?',
+        paragraphs: [
+          'Una dintre cele mai frecvente temeri ale pacienților este legată de durere. În realitate, tratamentul de canal se realizează cu anestezie locală, iar procedurile moderne sunt concepute pentru a reduce cât mai mult disconfortul. În cele mai multe cazuri, durerea asociată infecției dentare este mai mare decât cea resimțită în timpul tratamentului. Ghidurile pentru pacienți publicate de organizațiile medicale și de clinicile de referință descriu tratamentul modern de canal ca fiind, de regulă, bine tolerat.',
+        ],
+      },
+      {
+        heading: 'Cât durează tratamentul',
+        paragraphs: [
+          'Durata tratamentului diferă de la un caz la altul. Ea depinde de dintele afectat, de numărul canalelor, de anatomia rădăcinilor și de prezența sau absența unei infecții active. Unele cazuri pot fi tratate într-o singură ședință, iar altele pot necesita mai multe vizite. Din perspectiva pacientului, cel mai important este ca tratamentul să fie realizat corect, cu atenție la fiecare etapă, nu grăbit.',
+        ],
+      },
+      {
+        heading: 'Cum decurge recuperarea',
+        paragraphs: [
+          'După tratament, este posibil să apară o sensibilitate ușoară sau moderată în zona dintelui, mai ales la masticație, pentru câteva zile. Acest lucru este normal în multe situații și nu înseamnă neapărat că tratamentul nu a reușit. În general, recuperarea este ușoară, iar pacientul își poate relua activitățile obișnuite destul de repede. Disconfortul tinde să scadă treptat în zilele următoare, conform ghidurilor de îngrijire post-tratament.',
+        ],
+      },
+      {
+        heading: 'Ce este normal după tratament',
+        paragraphs: [
+          'După un tratament de canal, pot apărea:',
+          'sensibilitate la atingere sau mușcătură',
+          'o ușoară jenă locală',
+          'senzație de presiune în primele zile',
+          'disconfort temporar până la finalizarea reconstrucției definitive',
+          'Aceste reacții pot face parte din evoluția normală post-tratament, atâta timp cât se reduc progresiv.',
+        ],
+      },
+      {
+        heading: 'Când trebuie să reveniți la medic',
+        paragraphs: [
+          'Este recomandat să reveniți cât mai curând la medic dacă apar:',
+          'durere intensă care nu cedează',
+          'umflătură care se accentuează',
+          'senzația că mușcătura nu este corectă',
+          'revenirea simptomelor după o perioadă de ameliorare',
+          'pierderea obturației provizorii sau definitive',
+          'Un control la timp poate preveni complicațiile și poate ajuta la ajustarea tratamentului, dacă este necesar.',
+        ],
+      },
+      {
+        heading: 'De ce este important să nu amânați',
+        paragraphs: [
+          'Atunci când nervul dintelui este afectat, amânarea tratamentului poate favoriza evoluția infecției și poate reduce șansele de a păstra dintele. În multe cazuri, cu cât tratamentul este început mai repede, cu atât intervenția poate fi mai simplă și prognosticul mai bun. Această concluzie este în linie cu recomandările generale privind managementul infecțiilor dentare și al afectării pulpei dentare.',
+        ],
+      },
+      {
+        heading: 'Concluzie',
+        paragraphs: [
+          'Tratamentul de canal este o soluție eficientă atunci când un dinte este afectat în profunzime, dar poate fi încă salvat. Cu un diagnostic corect și un plan de tratament bine stabilit, această procedură poate elimina infecția, reduce disconfortul și ajuta la păstrarea dintelui natural. Dacă aveți simptome precum durere persistentă, sensibilitate accentuată sau inflamație în jurul unui dinte, un consult stomatologic este cel mai bun pas pentru a afla ce tratament este necesar.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Când este necesar tratamentul de canal?',
+        answer: 'Tratamentul de canal este necesar atunci când pulpa dintelui este inflamată sau infectată, de obicei din cauza unei carii profunde, a unei infecții sau a unui traumatism.',
+      },
+      {
+        question: 'Tratamentul de canal se face cu anestezie?',
+        answer: 'Da, în mod obișnuit tratamentul se face cu anestezie locală, pentru ca procedura să fie cât mai confortabilă pentru pacient.',
+      },
+      {
+        question: 'Cât durează recuperarea după tratament?',
+        answer: 'În general, disconfortul este ușor și temporar. Mulți pacienți își reiau activitățile normale rapid, iar sensibilitatea scade treptat în următoarele zile.',
+      },
+      {
+        question: 'După tratament mai trebuie făcut ceva?',
+        answer: 'În multe cazuri, da. După tratamentul de canal, dintele poate avea nevoie de reconstrucție sau de o coroană, pentru protecție și rezistență pe termen lung.',
+      },
+      {
+        question: 'Ce se întâmplă dacă amân tratamentul?',
+        answer: 'Amânarea poate duce la agravarea infecției, la dureri mai mari și, în unele cazuri, la pierderea dintelui.',
+      },
+    ],
+    related: ['durere-de-masea', 'implant-dentar-bucuresti', 'ingrijirea-coroanelor-facetelor'],
+  },
 ];
 
 export function getResource(slug: string) {
