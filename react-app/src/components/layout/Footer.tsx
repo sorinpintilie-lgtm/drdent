@@ -216,10 +216,13 @@ function Footer() {
           </p>
 
           <div className="flex items-center gap-6 text-sm text-white/70">
-            <Link to="/privacy" className="hover:text-white transition-colors">
+            <Link to="/politica-confidentialitate" className="hover:text-white transition-colors">
               Politica de Confidențialitate
             </Link>
-            <Link to="/terms" className="hover:text-white transition-colors">
+            <Link to="/politica-cookies" className="hover:text-white transition-colors">
+              Politica de Cookies
+            </Link>
+            <Link to="/termenii-conditii" className="hover:text-white transition-colors">
               Termeni și Condiții
             </Link>
           </div>

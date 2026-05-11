@@ -156,6 +156,18 @@ function Contact() {
                   Trimite mesajul
                 </button>
               </form>
+
+              <p className="text-xs text-gray-500 mt-4 text-center">
+                Prin trimiterea acestui formular, sunteți de acord cu{' '}
+                <a href="/politica-confidentialitate" className="text-primary-600 hover:text-primary-700 underline">
+                  Politica de confidențialitate
+                </a>{' '}
+                și{' '}
+                <a href="/politica-cookies" className="text-primary-600 hover:text-primary-700 underline">
+                  Politica de cookies
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>

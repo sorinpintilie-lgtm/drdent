@@ -12,6 +12,9 @@ import Resources from './pages/Resources';
 import ResourceArticle from './pages/ResourceArticle';
 import NotFound from './pages/NotFound';
 import Chat from './pages/Chat';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import CookiePolicy from './pages/CookiePolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         <Route path="resources/:slug" element={<ResourceArticle />} />
         <Route path="contact" element={<Contact />} />
         <Route path="chat" element={<Chat />} />
+        <Route path="politica-confidentialitate" element={<PrivacyPolicy />} />
+        <Route path="politica-cookies" element={<CookiePolicy />} />
+        <Route path="termenii-conditii" element={<TermsOfService />} />
         <Route path="pedodontie" element={<Navigate to="/stomatologie-pediatrica" replace />} />
         <Route path="*" element={<NotFound />} />
       </Route>
