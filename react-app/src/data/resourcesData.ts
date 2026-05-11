@@ -1460,6 +1460,85 @@ export const resourcesData: ResourceArticle[] = [
     ],
     related: ['durere-de-masea', 'implant-dentar-bucuresti', 'ingrijirea-coroanelor-facetelor'],
   },
+  {
+    slug: 'detartraj-dentar',
+    title: 'Detartraj dentar: cât de des se face, ce beneficii are și când este recomandat',
+    description: 'Află ce este detartrajul dentar, de ce este important pentru sănătatea gingiilor și cât de des este recomandat în funcție de fiecare pacient.',
+    excerpt: 'Detartrajul ajută la îndepărtarea tartrului și la prevenirea inflamațiilor gingivale. Vezi când este recomandat și de ce nu trebuie amânat.',
+    category: 'tratamente',
+    categoryTitle: resourceCategoryMeta.tratamente.title,
+    seoTitle: 'Detartraj dentar: beneficii, frecvență și recomandări | DrDent',
+    metaDescription: 'Află cât de des se face detartrajul dentar, ce beneficii are și de ce este important pentru prevenirea gingivitei și a problemelor parodontale.',
+    seoKeywords: [
+      'detartraj dentar',
+      'cat de des se face detartrajul',
+      'detartraj bucuresti',
+      'igienizare dentara profesionala',
+      'tartru dentar',
+      'detartraj si airflow',
+      'prevenire gingivita',
+    ],
+    readTime: '7 min',
+    lastUpdated: '2026-05-01',
+    primaryRoute: '/contact',
+    primaryRouteLabel: 'Programează o igienizare dentară',
+    content: [
+      {
+        heading: 'Ce este detartrajul dentar',
+        paragraphs: [
+          'Detartrajul dentar este procedura prin care medicul stomatolog îndepărtează tartrul depus pe dinți și în apropierea gingiilor. Tartrul nu poate fi curățat eficient acasă prin periaj obișnuit, deoarece este o depunere mineralizată care aderă puternic pe suprafața dentară.',
+          'Scopul detartrajului nu este doar estetic. Procedura ajută la menținerea gingiilor sănătoase, reduce inflamația locală și contribuie la prevenirea problemelor parodontale atunci când este realizată periodic.',
+        ],
+      },
+      {
+        heading: 'De ce apare tartrul',
+        paragraphs: [
+          'Tartrul se formează atunci când placa bacteriană nu este îndepărtată complet și se mineralizează în timp. Zonele greu accesibile, periajul incomplet, lipsa folosirii aței dentare sau anumite particularități ale salivei pot favoriza acumularea lui.',
+          'Chiar și pacienții care se spală zilnic pe dinți pot avea depuneri de tartru. De aceea, igienizarea profesională nu înlocuiește rutina de acasă, ci o completează.',
+        ],
+      },
+      {
+        heading: 'Cât de des este recomandat detartrajul',
+        paragraphs: [
+          'Frecvența detartrajului se stabilește în funcție de fiecare pacient. Pentru unele persoane, o igienizare profesională la 6 luni poate fi suficientă. Pentru pacienții cu inflamații gingivale, tartru abundent, lucrări dentare, implanturi sau risc parodontal, medicul poate recomanda controale mai dese.',
+          'Nu există o regulă unică potrivită pentru toată lumea. Cel mai corect este ca medicul să evalueze gingiile, nivelul de igienă, prezența tartrului și istoricul pacientului înainte de a recomanda intervalul potrivit.',
+        ],
+      },
+      {
+        heading: 'Detartrajul doare?',
+        paragraphs: [
+          'În general, detartrajul este o procedură bine tolerată. Pacienții pot simți vibrații, presiune locală sau sensibilitate, mai ales dacă există inflamație gingivală, retracții gingivale sau tartru acumulat în cantitate mare.',
+          'Dacă există disconfort, medicul poate adapta procedura. Este important ca pacientul să comunice orice sensibilitate, pentru ca igienizarea să fie realizată cât mai confortabil.',
+        ],
+      },
+      {
+        heading: 'Ce se întâmplă după detartraj',
+        paragraphs: [
+          'După detartraj, gingiile pot fi ușor sensibile pentru o perioadă scurtă, mai ales dacă înainte existau inflamație sau sângerare. De obicei, această sensibilitate se reduce treptat, iar senzația de curățenie este vizibilă rapid.',
+          'Medicul poate recomanda o tehnică mai bună de periaj, folosirea aței dentare, periuțe interdentare sau controale periodice. Rezultatul se menține mai bine atunci când igiena de acasă este corectă și constantă.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Detartrajul afectează smalțul?',
+        answer: 'Detartrajul realizat corect, în cabinet, nu are ca scop afectarea smalțului, ci îndepărtarea tartrului și a depunerilor de pe suprafața dentară.',
+      },
+      {
+        question: 'Este normal să sângereze gingiile după detartraj?',
+        answer: 'Poate apărea o ușoară sensibilitate sau sângerare dacă gingiile erau deja inflamate. Dacă simptomele persistă sau se agravează, este indicat un control.',
+      },
+      {
+        question: 'Detartrajul albește dinții?',
+        answer: 'Detartrajul îndepărtează tartrul și unele depuneri, dar nu schimbă nuanța internă a dintelui așa cum o face o procedură de albire dentară.',
+      },
+    ],
+    related: [
+      'gingii-care-sangereaza',
+      'boala-parodontala',
+      'ingrijire-zilnica-orala',
+    ],
+  },
 ];
 
 export function getResource(slug: string) {
