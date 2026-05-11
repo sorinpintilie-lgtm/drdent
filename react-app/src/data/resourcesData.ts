@@ -1539,6 +1539,85 @@ export const resourcesData: ResourceArticle[] = [
       'ingrijire-zilnica-orala',
     ],
   },
+  {
+    slug: 'coroana-dentara',
+    title: 'Coroană dentară: când este necesară, ce rol are și cum se îngrijește',
+    description: 'Află când poate fi recomandată o coroană dentară, ce rol are în protejarea dintelui și ce trebuie să știi înainte de tratament.',
+    excerpt: 'Coroana dentară poate proteja un dinte slăbit, reconstruit sau tratat pe canal. Vezi când este recomandată și cum se întreține corect.',
+    category: 'tratamente',
+    categoryTitle: resourceCategoryMeta.tratamente.title,
+    seoTitle: 'Coroană dentară: când este necesară și cum se îngrijește | DrDent',
+    metaDescription: 'Află când ai nevoie de coroană dentară, ce rol are, cum se realizează și ce recomandări sunt importante pentru întreținere.',
+    seoKeywords: [
+      'coroana dentara',
+      'cand ai nevoie de coroana dentara',
+      'coroana dentara bucuresti',
+      'coroana dupa tratament de canal',
+      'lucrare dentara fixa',
+      'ingrijire coroana dentara',
+      'coroana ceramica',
+    ],
+    readTime: '7 min',
+    lastUpdated: '2026-05-15',
+    primaryRoute: '/servicii',
+    primaryRouteLabel: 'Vezi serviciile protetice',
+    content: [
+      {
+        heading: 'Ce este o coroană dentară',
+        paragraphs: [
+          'Coroana dentară este o lucrare protetică fixă care acoperă un dinte afectat, reconstruit sau slăbit, cu scopul de a-i reda forma, funcția și rezistența. Ea poate fi recomandată atunci când o obturație simplă nu mai este suficientă pentru stabilitatea dintelui.',
+          'Pe lângă rolul funcțional, coroana poate avea și un rol estetic, mai ales în zonele vizibile. Alegerea soluției potrivite depinde de starea dintelui, poziția lui pe arcadă, mușcătura și obiectivele pacientului.',
+        ],
+      },
+      {
+        heading: 'Când este necesară o coroană dentară',
+        paragraphs: [
+          'O coroană dentară poate fi recomandată după un tratament de canal, în cazul unui dinte fracturat, al unei carii extinse, al unei reconstrucții mari sau atunci când o lucrare mai veche trebuie înlocuită.',
+          'De asemenea, coroanele pot fi folosite în planuri de tratament mai complexe, inclusiv pentru restaurări pe implanturi. Indicația se stabilește în cabinet, după consult și investigații, nu doar pe baza aspectului dintelui.',
+        ],
+      },
+      {
+        heading: 'De ce se recomandă uneori după tratamentul de canal',
+        paragraphs: [
+          'După tratamentul de canal, un dinte poate deveni mai fragil, mai ales dacă a pierdut multă structură dentară. În astfel de cazuri, coroana poate ajuta la protejarea dintelui și la distribuirea mai bună a forțelor de masticație.',
+          'Nu orice dinte tratat pe canal are automat nevoie de coroană, dar atunci când distrucția este mare sau zona este intens solicitată, medicul poate recomanda această soluție pentru un rezultat mai sigur pe termen lung.',
+        ],
+      },
+      {
+        heading: 'Cum se realizează tratamentul',
+        paragraphs: [
+          'Tratamentul începe cu evaluarea dintelui și stabilirea planului. În funcție de caz, poate fi nevoie de reconstrucție, șlefuire, amprentare sau scanare, realizarea coroanei și cimentarea finală.',
+          'Pe durata tratamentului, pacientul poate primi o coroană provizorie pentru protecție și confort. Coroana finală este adaptată astfel încât să respecte mușcătura, contactele cu dinții vecini și aspectul dorit.',
+        ],
+      },
+      {
+        heading: 'Cum se îngrijește o coroană dentară',
+        paragraphs: [
+          'O coroană dentară trebuie îngrijită la fel de atent ca dinții naturali. Periajul corect, curățarea zonei de la marginea gingiei și controalele periodice sunt importante pentru menținerea sănătății țesuturilor din jur.',
+          'Chiar dacă materialul coroanei nu face carie, dintele suport și gingia pot fi afectate dacă igiena este neglijată. De aceea, întreținerea corectă este esențială pentru durabilitatea lucrării.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Cât durează o coroană dentară?',
+        answer: 'Durata depinde de material, igienă, mușcătură, controale periodice și starea dintelui suport. O coroană bine realizată și bine întreținută poate avea o durată foarte bună în timp.',
+      },
+      {
+        question: 'Coroana dentară doare?',
+        answer: 'Procedura se realizează cu anestezie atunci când este necesar. După tratament poate apărea o sensibilitate temporară, dar disconfortul persistent trebuie verificat.',
+      },
+      {
+        question: 'Se poate face carie sub coroană?',
+        answer: 'Da, dintele suport poate fi afectat la marginea coroanei dacă igiena este deficitară sau dacă apar infiltrații. De aceea sunt importante controalele regulate.',
+      },
+    ],
+    related: [
+      'tratament-de-canal',
+      'ingrijirea-coroanelor-fatetelor',
+      'ingrijire-zilnica-orala',
+    ],
+  },
 ];
 
 export function getResource(slug: string) {
